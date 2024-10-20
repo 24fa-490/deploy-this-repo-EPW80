@@ -26,6 +26,7 @@
 	"type": "module",
 	"dependencies": {
 		"postgres": "^3.4.4",
+		"rollup": "^4.24.0",
 		"vite-plugin-mkcert": "^1.17.5"
 	}
 }
