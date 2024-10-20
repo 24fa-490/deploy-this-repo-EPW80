@@ -2,7 +2,7 @@
 
 ## uses 'postgres' npm package
 
-# running:
+# running
 
 1. git clone this
 
@@ -27,5 +27,3 @@
 # Where am I deployed?
 
 <enter your URL here>
-
-
