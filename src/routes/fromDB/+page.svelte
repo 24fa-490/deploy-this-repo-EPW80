@@ -1,6 +1,6 @@
 <script>
 	export let data;
-	//console.log({data});
+	console.log({data});
 
 </script>
 
@@ -8,14 +8,14 @@
 
 {#each data.containers as container}
 	<div>
-		<span class="id">{container.containernumber}</span>
-		<span class="name">{container.nameofship}</span>
-		<span class="size">{container.containersize}</span>
-		<span class="date">{container.datecontainershipped}</span>
+		<div class="id">{container.containernumber}</div>
+		<div class="name">{container.nameofship}</div>
+		<div class="size">{container.containersize}</div>
+		<div class="date">{container.datecontainershipped}</div>
 	</div>
 {/each}
 
-<span class=i>(database lives in PostgreSQL)</span>
+<div class=i>(database lives in PostgreSQL)</div>
 
 <style>
 	.id {
