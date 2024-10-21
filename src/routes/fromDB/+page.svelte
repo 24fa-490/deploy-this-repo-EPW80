@@ -1,7 +1,6 @@
 <script>
 	export let data;
-	//console.log({data});
-
+	console.log({data});
 </script>
 
 <h1>Fetched from Database</h1>
@@ -15,7 +14,7 @@
 	</div>
 {/each}
 
-<span class=i>(database lives in PostgreSQL)</span>
+<div class="i">(database lives in PostgreSQL)</div>
 
 <style>
 	.id {
@@ -24,6 +23,10 @@
 	}
 	.name {
 		color: #999;
+		margin-right: 10px;
+	}
+	.size {
+		margin-right: 10px;
 	}
 	.i {
 		font-style: italic;

@@ -9,9 +9,9 @@ export async function load() {
         containerSize,
         dateContainerShipped
     FROM
-        containersz`;
+        containers`;
 
     console.log({rows});
 
-    return { containers: rows };
+    return {containers: rows};
 }
