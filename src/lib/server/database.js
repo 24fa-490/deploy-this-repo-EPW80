@@ -1,9 +1,14 @@
+import postgres from 'postgres';
+import { PGCONNECT } from '$env/static/private';
 
-import postgres from 'postgres'
+// Ensure the environment variable exists
+if (!PGCONNECT) {
+    throw new Error('Environment variable PGCONNECT is missing.');
+}
 
-// see env variables in .env
-import {PGCONNECT} from '$env/static/private';
-
-const sql = postgres(PGCONNECT, {} )
+// Initialize the PostgreSQL connection
+const sql = postgres(PGCONNECT, {
+    // Add any additional options here, like SSL settings if needed.
+});
 
 export default sql;
